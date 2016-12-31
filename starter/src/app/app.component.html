@@ -1,0 +1,17 @@
+<h1>Built-in vs Custom pipes</h1>
+<br><br>
+<h3>Built-in uppercase and lowercase pipe example</h3>
+<br>
+<ul>
+    <li *ngFor="let friend of friends">
+        <pre><span><b><u>Name:</u></b> {{friend.name | uppercase}}, </span><span><b><u>Hobby:</u></b> {{friend.hobby | lowercase}}</span></pre>
+    </li>
+</ul>
+<br>
+<h3>Custom uppercase and lowercase pipe example</h3>
+<br>
+<ul>
+    <li *ngFor="let friend of friends">
+        <pre><span><b><u>Name:</u></b> {{friend.name | myuppercase}}, </span><span><b><u>Hobby:</u></b> {{friend.hobby | mylowercase}}</span></pre>
+    </li>
+</ul>
